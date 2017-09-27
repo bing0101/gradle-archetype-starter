@@ -1,8 +1,4 @@
 rootProject.name = 'gradle-archetype-starter'
-include 'templates'
+
 include 'project-creator-gradle-plugin'
 include 'project-creator-init-gradle'
-
-include ':templates:dubbo-template'
-include ':templates:web-template'
-include ':templates:task-template'
