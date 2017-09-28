@@ -19,7 +19,6 @@ subprojects {
 
     dependencies {
         compile "org.projectlombok:lombok:1.16.10"
-        compile "org.codehaus.groovy:groovy-all:2.3.11"
 
 //      log4j2核心包
         compile "org.apache.logging.log4j:log4j-api:${log4j2Version}"
