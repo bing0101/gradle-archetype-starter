@@ -1,0 +1,25 @@
+apply plugin: "groovy"
+apply plugin: "maven"
+
+repositories {
+    mavenLocal()
+    maven {
+        url "http://maven.aliyun.com/nexus/content/groups/public"
+    }
+}
+
+dependencies {
+    compile gradleApi()
+    compile localGroovy()
+}
+
+uploadArchives {
+    repositories.mavenDeployer {
+        repository(url: "http://192.168.1.177:8081/nexus/content/repositories/releases") {
+            authentication(userName: "deployment", password: "wodianni")
+        }
+        repository(url: "http://192.168.1.177:8081/nexus/content/repositories/snapshots") {
+            authentication(userName: "deployment", password: "wodianni")
+        }
+    }
+}

@@ -1,12 +1,5 @@
-buildscript {
-    dependencies {
-        classpath files("build/libs/project-creator-gradle-plugin-1.0-SNAPSHOT.jar")
-    }
-}
-
 apply plugin: "groovy"
 apply plugin: "maven"
-apply plugin: "gradle-archetype-plugin"
 
 repositories {
     mavenLocal()

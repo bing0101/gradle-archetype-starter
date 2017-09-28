@@ -1,0 +1,10 @@
+initscript {
+    dependencies {
+        classpath files("F:\\github\\study\\gradle-archetype-starter\\project-creator-init-gradle\\build\\libs\\project-creator-init-gradle-1.0-SNAPSHOT.jar")
+    }
+}
+String initProject = System.getProperty("initProject")
+if (initProject == "true") {
+    println "init project..."
+    com.bing.init.gradle.InitProcess.process()
+}
